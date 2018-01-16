@@ -5,8 +5,12 @@ class Contact extends React.Component {
     return (
       <div className="page">
         <h1> Contact </h1>
-          <p> Managing director: Bernie Vogel 212-497-9533</p>
+        <div className="pageText">
+          <p> Managing Director: Bernie Vogel
+          </p><p>212-497-9533</p>
           <p> Email: <a href={'mailto:$(this.props.email}'}>bernie@atpoptions.com</a></p>
+          <p> 622 3rd Avenue 7th floor, NY . NY 10017</p>
+        </div>
       </div>
       )
     }

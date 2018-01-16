@@ -22,8 +22,8 @@ class App extends Component {
                 <Link to="/about">About</Link>
                 <Link to="/employers">Employers</Link>
                 <Link to="/candidates">Candidates</Link>
-                <Link to="/sales">Sales</Link>
-                <Link to="/retainedsearch">Reatained Search</Link>
+                <Link to="/sales">Services</Link>
+                <Link to="/retainedsearch">Retained Search</Link>
                 <Link to="/projectmanagement&staffingsolutions">Project Management and Staffing</Link>
                 <Link to="/contact">Contact</Link>
             </div>
