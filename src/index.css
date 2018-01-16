@@ -11,6 +11,7 @@ body,
 #root {
     height: 100%;
     width: 100%;
+    font-family: Roboto, sans-serif;
 }
 
 body {
@@ -90,4 +91,10 @@ img {
     border: 25px solid grey;
     background: grey;
     color: white;
+}
+
+canvas {
+    position: "relative";
+    margin: auto;
+    left: 33%;
 }
