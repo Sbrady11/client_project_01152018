@@ -1,12 +1,25 @@
 import React from 'react';
 import ReactCountDownClock from 'react-countdown-clock';
+import ReactRevealText from 'react-reveal-text';
 
 class Candidates extends React.Component {
+  constructor() {
+    super();
+    this.state = { show: false };
+  }
+
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState({ show: true });
+    }, 100);
+  }
   render() {
     return (
       <div className="page">
           <h1>
-            Candidates
+            <ReactRevealText show={this.state.show}>
+              Candidates
+            </ReactRevealText>
           </h1>
         <div className="pageText">
           <p>

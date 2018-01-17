@@ -1,11 +1,24 @@
 import React from 'react';
+import ReactRevealText from 'react-reveal-text';
 
 class Sales extends React.Component {
+  constructor() {
+    super();
+    this.state = { show: false };
+  }
+
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState({ show: true });
+    }, 100);
+  }
   render() {
     return (
       <div className="page">
           <h1>
-            The ATP Options Difference
+            <ReactRevealText show={this.state.show}>
+              The ATP Options Difference
+            </ReactRevealText>
           </h1>
         <div className="pageText">
           <h2> Collaboration, Not Automation </h2>

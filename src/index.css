@@ -74,9 +74,10 @@ canvas {
     align-content: center;
     position: relative;
     z-index: 1;
-    left: 25%
+    left: 28%
 }
 
 .navbar {
     z-index: 9999;
+    position: fixed;
 }
