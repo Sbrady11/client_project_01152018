@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactRevealText from 'react-reveal-text';
+import Creativity from '../images/037-creativity.png';
 
 class Sales extends React.Component {
   constructor() {
@@ -16,6 +17,7 @@ class Sales extends React.Component {
     return (
       <div className="page">
           <h1>
+            <img className="topIcon" src={Creativity} alt='img'/>
             <ReactRevealText show={this.state.show}>
               The ATP Options Difference
             </ReactRevealText>

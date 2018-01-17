@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactRevealText from 'react-reveal-text';
+import Handshake from '../images/037-handshake.png'
 
 class AboutUs extends React.Component {
   constructor() {
@@ -16,6 +17,7 @@ class AboutUs extends React.Component {
     return (
       <div className="page">
       <h1>
+      <img className="topIcon" src={Handshake} alt='img'/>
       <ReactRevealText show={this.state.show}>
           About Us
       </ReactRevealText>
