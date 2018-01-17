@@ -1,7 +1,19 @@
 import React from 'react';
 import logo from '../images/FixedATPLogo.png';
+import ReactRevealText from 'react-reveal-text';
 
 class Home extends React.Component {
+  constructor() {
+    super();
+    this.state = { show: false };
+  }
+
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState({ show: true });
+    }, 2500);
+  }
+
   render() {
     return (
       <div className="mainWrapper">
@@ -11,8 +23,13 @@ class Home extends React.Component {
             <img className ="logo" src={logo} alt="Logo" />
           </div>
           <div className='subTitle'>
-            OPTONS
+            OPTIONS
           </div>
+          <h1>
+          <ReactRevealText show={this.state.show}>
+            Full Service Staffing Firm
+          </ReactRevealText>
+          </h1>
         </div>
       </div>
       )

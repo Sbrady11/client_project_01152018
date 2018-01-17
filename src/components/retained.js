@@ -2,7 +2,6 @@ import React from 'react';
 import ReactRevealText from 'react-reveal-text';
 import Briefcase from '../images/037-briefcase.png';
 import GrowthImg from '../images/svg/037-growth.svg';
-import Analytics from '../images/svg/009-analytics-2.svg';
 
 
 class Retained extends React.Component {

@@ -147,11 +147,13 @@ h2 {
     color: White;
     text-shadow: 0 0 0.1em black;
     letter-spacing: 0em;
-    text-align: center
+    text-align: center;
+    max-height: 300px
 }
 
 .title span {
     display: inline-block;
+    max-height: 300px
 }
 
 .title span:nth-child(1) {
@@ -175,7 +177,8 @@ h2 {
     text-shadow: 0 .1em 0.1em;
     bottom: 200px;
     text-align: center;
-    letter-spacing: .3em
+    letter-spacing: .3em;
+    padding-bottom: 1em;
 }
 
 .subTitle:nth-child(2) {
