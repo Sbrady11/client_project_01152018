@@ -1,6 +1,9 @@
 import React from 'react';
 import ReactRevealText from 'react-reveal-text';
 import Briefcase from '../images/037-briefcase.png';
+import GrowthImg from '../images/svg/037-growth.svg';
+import Analytics from '../images/svg/009-analytics-2.svg';
+
 
 class Retained extends React.Component {
   constructor() {
@@ -9,11 +12,23 @@ class Retained extends React.Component {
   }
 
   componentDidMount() {
-    setTimeout(() => {
-      this.setState({ show: true });
-    }, 100);
+  setTimeout(() => {
+    this.setState({ show: true });
+  }, 100);
   }
+
   render() {
+
+      const imgStyle = {
+      height: 120,
+      width: 120,
+      float: 'right',
+      clear: 'left',
+      position: 'relative',
+      bottom: 150,
+      right: 160
+    }
+
     return (
       <div className="page">
         <h1> 
@@ -38,6 +53,7 @@ class Retained extends React.Component {
               <li>Government</li>
             </ul>
          </div>
+         <img className ="buildingPic" src={GrowthImg} style={imgStyle} alt="GrowthImg" />
         </div>
       </div>
       )
