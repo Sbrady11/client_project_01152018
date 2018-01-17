@@ -7,9 +7,7 @@ class Home extends React.Component {
     return (
         <div className="homeSplash">
           <img className="background" src={Background} alt="Shutterstock Background 1"/>
-        <p>
           <img className="logo" src={Logo} alt="ATPOptions"/>
-        </p>
     </div>
       )
     }

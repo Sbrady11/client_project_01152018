@@ -15,7 +15,8 @@ body,
 }
 
 h1 {
-    text-align: center
+    text-align: center;
+    letter-spacing: .3em
 }
 
 body {
@@ -34,7 +35,8 @@ a {
     margin-right: 10px;
     text-decoration: none;
     z-index: 1;
-    color: white
+    color: white;
+    letter-spacing: .2em
 }
 
 .animated-page-wrapper {
@@ -50,6 +52,7 @@ a {
 }
 
 .pageText {
+    max-width: 100%;
     padding: 10px;
     border: 25px solid grey;
     background: grey;
@@ -65,13 +68,26 @@ canvas {
 }
 
 .background {
-    max-width: 100%;
+    max-width: 400%;
     opacity: 0.2;
     z-index: -1;
     position: absolute;
     display: block;
     height: auto;
     width: auto;
+}
+
+@media (min-width:1500px) {
+    .background {
+        left: 200px;
+        max-width: 400%;
+        opacity: 0.2;
+        z-index: -1;
+        position: absolute;
+        display: block;
+        height: auto;
+        width: auto;
+    }
 }
 
 .logo {
@@ -102,7 +118,17 @@ h2 {
     text-align: center;
 }
 
+@media (max-width: 375px) {
+    .topIcon {
+        max-height: 30%;
+        max-width: 30%
+    }
+}
+
 .topIcon {
     max-height: 10%;
     max-width: 10%
+}
+
+.buildingPic {
 }

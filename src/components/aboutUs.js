@@ -23,8 +23,8 @@ class AboutUs extends React.Component {
       </ReactRevealText>
       </h1>
         <div className="pageText">
-          <p>
-            ATP Options - A full-service national staffing firm based in New York City with offices in Texas, Chicago, Florida, California etc. Our broad-based staffing solutions range from project staffing services (hiring a team or a division full time or consultants) to long-term on-site recruiting, temporary hiring on exclusive or contingency basis and full-time traditional recruitment. We use cloud-based resources and AI technology to create personal and effective advantages in the market.
+          <h3>ATP Options</h3>
+          <p> - A full-service national staffing firm based in New York City with offices in Texas, Chicago, Florida, California etc. Our broad-based staffing solutions range from project staffing services (hiring a team or a division full time or consultants) to long-term on-site recruiting, temporary hiring on exclusive or contingency basis and full-time traditional recruitment. We use cloud-based resources and AI technology to create personal and effective advantages in the market.
           </p>
           <p>
             We are taking our combined years of multiple industry experiences to have clients and associates benefit from working in a diverse and mature working relationship. Our position in the market is to continually invest and sustain our position as market leaders and innovators through 1st link resources only.

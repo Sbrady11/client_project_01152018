@@ -51,8 +51,8 @@ class App extends Component {
             {/* Bootstrapped Nav */}
 
             <Navbar color="faded" light expand="md">
-              <NavbarBrand href="/">ATP Options</NavbarBrand>
               <NavbarToggler onClick={this.toggle} />
+              <NavbarBrand href="/">ATP Options</NavbarBrand>
               <Collapse isOpen={this.state.isOpen} navbar>
                 <Nav className="ml-auto" navbar>
                   <UncontrolledDropdown nav inNavbar>
