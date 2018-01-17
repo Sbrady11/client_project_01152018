@@ -1,11 +1,24 @@
 import React from 'react';
+import ReactRevealText from 'react-reveal-text';
 
 class Employers extends React.Component {
+  constructor() {
+    super();
+    this.state = { show: false };
+  }
+
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState({ show: true });
+    }, 100);
+  }
   render() {
     return (
       <div className="page">
         <h1>
-         Employers
+          <ReactRevealText show={this.state.show}>
+            Employers
+          </ReactRevealText>
         </h1>
         <div className="pageText">
           <p>

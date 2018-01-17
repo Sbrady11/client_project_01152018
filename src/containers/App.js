@@ -1,5 +1,17 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import {
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  UncontrolledDropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem } from 'reactstrap';
+import 'bootstrap/dist/css/bootstrap.css';
 import AnimatedRoutes from '../components/animatedRoutes';
 import AboutUs from '../components/aboutUs.js';
 import Employers from '../components/employers.js';
@@ -12,21 +24,85 @@ import Contact from '../components/contact.js';
 
 /* webpage */
 class App extends Component {
+  constructor(props) {
+    super(props);
+
+    this.toggle = this.toggle.bind(this);
+    this.state = {
+      isOpen: false
+    };
+  }
+  toggle() {
+    this.setState({
+      isOpen: !this.state.isOpen
+    });
+  }
   render() {
+
+    const myStyle = {
+      textDecoration: 'none'
+    }
+
     return (
       <div className="App">
         <Router>
           <div>
-            <div className="TopBar">
-                <Link to="/">ATPOptions</Link>
-                <Link to="/about">About</Link>
-                <Link to="/employers">Employers</Link>
-                <Link to="/candidates">Candidates</Link>
-                <Link to="/sales">Services</Link>
-                <Link to="/retainedsearch">Retained Search</Link>
-                <Link to="/projectmanagement&staffingsolutions">Project Management and Staffing</Link>
-                <Link to="/contact">Contact</Link>
-            </div>
+
+            {/* Bootstrapped Nav */}
+
+            <Navbar color="faded" light expand="md">
+              <NavbarBrand href="/">ATP Options</NavbarBrand>
+              <NavbarToggler onClick={this.toggle} />
+              <Collapse isOpen={this.state.isOpen} navbar>
+                <Nav className="ml-auto" navbar>
+                  <UncontrolledDropdown nav inNavbar>
+                    <DropdownToggle nav caret>
+                      Menu
+                    </DropdownToggle>
+                    <DropdownMenu >
+                      <DropdownItem>
+                        <NavItem>
+                          <Link to="/about" style={myStyle} >About</Link>
+                        </NavItem>
+                      </DropdownItem>
+                      <DropdownItem>
+                        <NavItem>
+                          <Link to="/employers" style={myStyle} >Employers</Link>
+                        </NavItem>
+                      </DropdownItem>
+                      <DropdownItem>
+                        <NavItem>
+                          <Link to="/candidates" style={myStyle} >Candidates</Link>
+                        </NavItem>
+                      </DropdownItem>
+                      <DropdownItem>
+                        <NavItem>
+                          <Link to="/sales" style={myStyle} >Services</Link>
+                        </NavItem>
+                      </DropdownItem>
+                      <DropdownItem>
+                        <NavItem>
+                          <Link to="/retainedsearch" style={myStyle} >Retained Search</Link>
+                        </NavItem>
+                      </DropdownItem>
+                      <DropdownItem>
+                        <NavItem>
+                          <Link to="/projectmanagement&staffingsolutions" style={myStyle} >Project Management and Staffing</Link>
+                        </NavItem>
+                      </DropdownItem>
+                      <DropdownItem>
+                        <NavItem>
+                          <Link to="/contact" style={myStyle} >Contact</Link>
+                        </NavItem>
+                      </DropdownItem>
+                    </DropdownMenu>
+                  </UncontrolledDropdown>
+                </Nav>
+              </Collapse>
+            </Navbar>
+            
+            {/*Animated Route Controller*/}
+            
             <AnimatedRoutes>
               <Route path="/" exact component={Home} />
               <Route path="/about" exact component={AboutUs} />

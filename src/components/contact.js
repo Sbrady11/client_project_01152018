@@ -1,10 +1,25 @@
 import React from 'react';
+import ReactRevealText from 'react-reveal-text';
 
 class Contact extends React.Component {
+  constructor() {
+    super();
+    this.state = { show: false };
+  }
+
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState({ show: true });
+    }, 100);
+  }
   render() {
     return (
       <div className="page">
-        <h1> Contact </h1>
+        <h1> 
+          <ReactRevealText show={this.state.show}>
+            Contact
+          </ReactRevealText>
+        </h1>
         <div className="pageText">
           <p> Managing Director: Bernie Vogel
           </p><p>212-497-9533</p>

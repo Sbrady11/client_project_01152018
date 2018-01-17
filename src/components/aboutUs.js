@@ -1,12 +1,25 @@
 import React from 'react';
+import ReactRevealText from 'react-reveal-text';
 
 class AboutUs extends React.Component {
+  constructor() {
+    super();
+    this.state = { show: false };
+  }
+
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState({ show: true });
+    }, 100);
+  }
   render() {
     return (
       <div className="page">
-        <h1>
+      <h1>
+      <ReactRevealText show={this.state.show}>
           About Us
-        </h1>
+      </ReactRevealText>
+      </h1>
         <div className="pageText">
           <p>
             ATP Options - A full-service national staffing firm based in New York City with offices in Texas, Chicago, Florida, California etc. Our broad-based staffing solutions range from project staffing services (hiring a team or a division full time or consultants) to long-term on-site recruiting, temporary hiring on exclusive or contingency basis and full-time traditional recruitment. We use cloud-based resources and AI technology to create personal and effective advantages in the market.
