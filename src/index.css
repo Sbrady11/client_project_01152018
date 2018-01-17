@@ -95,8 +95,8 @@ canvas {
     max-width: 40%;
     height: auto;
     align-content: center;
-    position: relative;
-    z-index: 1;
+    position: absolute;
+    z-index: -1;
     left: 28%
 }
 
@@ -143,10 +143,11 @@ h2 {
 .title {
     margin-right: 0.15em;
     font-weight: bold;
-    font-size: 17em;
+    font-size: 15em;
     color: White;
     text-shadow: 0 0 0.1em black;
     letter-spacing: 0em;
+    text-align: center
 }
 
 .title span {
@@ -165,9 +166,16 @@ h2 {
     animation: fall3 2s forwards ease-out alternate;
 }
 
+.title span:nth-child(4) {
+    animation: fall4 2.5s forwards ease-out alternate;
+}
+
 .subTitle {
-    font-size: 3em;
+    font-size: 2em;
     text-shadow: 0 .1em 0.1em;
+    bottom: 200px;
+    text-align: center;
+    letter-spacing: .3em
 }
 
 .subTitle:nth-child(2) {

@@ -19,14 +19,14 @@ class Retained extends React.Component {
 
   render() {
 
-      const imgStyle = {
-      height: 120,
-      width: 120,
-      float: 'right',
-      clear: 'left',
-      position: 'relative',
-      bottom: 150,
-      right: 160
+    const imgStyle = {
+    height: 200,
+    width: 200,
+    float: 'right',
+    clear: 'left',
+    position: 'relative',
+    bottom: 300,
+    right: 160
     }
 
     return (
