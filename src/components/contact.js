@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactRevealText from 'react-reveal-text';
+import Placeholder from '../images/037-placeholder.png';
 
 class Contact extends React.Component {
   constructor() {
@@ -15,7 +16,8 @@ class Contact extends React.Component {
   render() {
     return (
       <div className="page">
-        <h1> 
+        <h1>
+        <img className="topIcon" src={Placeholder} alt='img'/>
           <ReactRevealText show={this.state.show}>
             Contact
           </ReactRevealText>

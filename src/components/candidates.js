@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactCountDownClock from 'react-countdown-clock';
 import ReactRevealText from 'react-reveal-text';
+import Avatar from '../images/037-avatar.png'
 
 class Candidates extends React.Component {
   constructor() {
@@ -17,6 +18,7 @@ class Candidates extends React.Component {
     return (
       <div className="page">
           <h1>
+            <img className="topIcon" src={Avatar} alt='img'/>
             <ReactRevealText show={this.state.show}>
               Candidates
             </ReactRevealText>
