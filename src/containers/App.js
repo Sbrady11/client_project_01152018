@@ -57,7 +57,7 @@ class App extends Component {
                 <Nav className="ml-auto" navbar>
                   <UncontrolledDropdown nav inNavbar>
                     <DropdownToggle nav caret>
-                      Menu
+                      Navigation
                     </DropdownToggle>
                     <DropdownMenu >
                       <DropdownItem>
@@ -97,6 +97,23 @@ class App extends Component {
                       </DropdownItem>
                     </DropdownMenu>
                   </UncontrolledDropdown>
+                  <UncontrolledDropdown nav inNavbar>
+                      <DropdownToggle nav caret>
+                        Divisions
+                      </DropdownToggle>
+                      <DropdownMenu >
+                        <DropdownItem>
+                          Option 1
+                        </DropdownItem>
+                        <DropdownItem>
+                          Option 2
+                        </DropdownItem>
+                        <DropdownItem divider />
+                        <DropdownItem>
+                          Reset
+                        </DropdownItem>
+                      </DropdownMenu>
+                    </UncontrolledDropdown>
                 </Nav>
               </Collapse>
             </Navbar>
