@@ -131,11 +131,6 @@ h2 {
     max-width: 10%
 }
 
-.swapIcons {
-    height: 120;
-    width: 120;
-}
-
 .dropdown-toggle nav-link {
     margin: 20
 }
@@ -166,29 +161,6 @@ h2 {
 
 .title span:nth-child(3) {
     animation: fall3 2s forwards ease-out alternate;
-}
-
-.subTitle {
-    font-size: 2em;
-    text-shadow: 0 .1em 0.1em;
-    bottom: 200px;
-    text-align: center;
-    letter-spacing: .3em;
-    padding-bottom: 1em;
-}
-
-.subTitle:nth-child(2) {
-    animation: fall2 3.7s forwards ease-in-out alternate;
-}
-
-.subTitle:nth-child(3) {
-    font-size: 4.5em;
-    animation: fall3 3.9s forwards ease-in-out alternate;
-}
-
-.subTitle:nth-child(4) {
-    font-size: 2.8em;
-    animation: fall 4.2s forwards ease-in-out alternate;
 }
 
 @keyframes space {
