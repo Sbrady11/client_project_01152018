@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactCountDownClock from 'react-countdown-clock';
 import ReactRevealText from 'react-reveal-text';
-import Avatar from '../images/037-avatar.png'
+import Avatar from '../images/037-avatar.png';
 
 class Candidates extends React.Component {
   constructor() {

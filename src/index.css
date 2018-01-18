@@ -168,10 +168,6 @@ h2 {
     animation: fall3 2s forwards ease-out alternate;
 }
 
-.title span:nth-child(4) {
-    animation: fall4 2.5s forwards ease-out alternate;
-}
-
 .subTitle {
     font-size: 2em;
     text-shadow: 0 .1em 0.1em;
@@ -233,4 +229,9 @@ h2 {
     font-family: "arial";
     letter-spacing: 0.4em;
     overflow: hidden;
+}
+
+.subLogo {
+    width: 25px;
+    height: 25px;
 }

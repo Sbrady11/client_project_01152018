@@ -11,7 +11,7 @@ class Home extends React.Component {
   componentDidMount() {
     setTimeout(() => {
       this.setState({ show: true });
-    }, 2500);
+    }, 1500);
   }
 
   render() {
@@ -22,12 +22,9 @@ class Home extends React.Component {
             <span>A</span><span>T</span><span>P</span>
             <img className ="logo" src={logo} alt="Logo" />
           </div>
-          <div className='subTitle'>
-            OPTIONS
-          </div>
           <h1>
           <ReactRevealText show={this.state.show}>
-            Full Service Staffing Firm
+            OPTIONS
           </ReactRevealText>
           </h1>
         </div>

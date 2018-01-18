@@ -21,6 +21,8 @@ import Sales from '../components/sales.js';
 import Reatained from '../components/retained.js';
 import Project from '../components/project.js';
 import Contact from '../components/contact.js';
+import logo from '../images/FixedATPLogo.png';
+
 
 /* webpage */
 class App extends Component {
@@ -52,7 +54,7 @@ class App extends Component {
 
             <Navbar color="faded" light expand="md">
               <NavbarToggler onClick={this.toggle} />
-              <NavbarBrand href="/">ATP Options</NavbarBrand>
+              <NavbarBrand href="/"><img className ="subLogo" src={logo} alt="Logo" />ATP Options</NavbarBrand>
               <Collapse isOpen={this.state.isOpen} navbar>
                 <Nav className="ml-auto" navbar>
                   <UncontrolledDropdown nav inNavbar>

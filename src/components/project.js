@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactRevealText from 'react-reveal-text';
+import Coding from '../images/037-coding.png';
 
 class Project extends React.Component {
 
@@ -17,10 +18,14 @@ class Project extends React.Component {
     return (
       <div className="page">
         <h1> 
-        <ReactRevealText show={this.state.show}>
-          Project Management and Staffing 
-        </ReactRevealText>
+          <img className="topIcon" src={Coding} alt='img'/>
+          <ReactRevealText show={this.state.show}>
+            Project Management and Staffing 
+          </ReactRevealText>
         </h1>
+        <div className="pageText">
+          <p>Some Text</p>
+        </div>
       </div>
       )
     }
