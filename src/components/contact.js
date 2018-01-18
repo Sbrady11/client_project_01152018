@@ -38,8 +38,10 @@ class Contact extends React.Component {
           </ReactRevealText>
         </h1>
         <div className="pageText">
-          <p> Managing Director: Bernie Vogel
-          </p><p>212-497-9533</p>
+          <h3>
+            <p> Managing Director: Bernie Vogel</p>
+          </h3>
+          <p>212-497-9533</p>
           <p> Email: <a href={'mailto:$(this.props.email}'} style={letterSpacing}>bernie@atpoptions.com</a></p>
           <p> 622 3rd Avenue 7th floor, NY . NY 10017</p>
           <img className ="buildingPic" src={Building} style={imgStyle} alt="building" />
