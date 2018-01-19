@@ -14,15 +14,14 @@ import {
 import 'bootstrap/dist/css/bootstrap.css';
 import AnimatedRoutes from '../components/animatedRoutes';
 import AboutUs from '../components/aboutUs.js';
-import Employers from '../components/employers.js';
 import Candidates from '../components/candidates.js';
-import Home from '../components/home.js';
-import Sales from '../components/sales.js';
-import Reatained from '../components/retained.js';
-import Project from '../components/project.js';
 import Contact from '../components/contact.js';
-import logo from '../images/FixedATPLogo.png';
-
+import Employers from '../components/employers.js';
+import Home from '../components/home.js';
+import Logo from '../images/FixedATPLogo.png';
+import Project from '../components/project.js';
+import Reatained from '../components/retained.js';
+import Sales from '../components/sales.js';
 
 /* webpage */
 class App extends Component {
@@ -34,6 +33,9 @@ class App extends Component {
       isOpen: false
     };
   }
+
+  /* Handles 'toggle open' logic for nav items */
+
   toggle() {
     this.setState({
       isOpen: !this.state.isOpen
@@ -41,7 +43,9 @@ class App extends Component {
   }
   render() {
 
-    const myStyle = {
+    /* Removing the Link styling from each nav item */
+
+    const linkStyling = {
       textDecoration: 'none'
     }
 
@@ -54,7 +58,7 @@ class App extends Component {
 
             <Navbar color="faded" light expand="md">
               <NavbarToggler onClick={this.toggle} />
-              <NavbarBrand href="/"><img className ="subLogo" src={logo} alt="Logo" />ATP Options</NavbarBrand>
+              <NavbarBrand href="/"><img className ="subLogo" src={Logo} alt="Logo" />ATP Options</NavbarBrand>
               <Collapse isOpen={this.state.isOpen} navbar>
                 <Nav className="ml-auto" navbar>
                   <UncontrolledDropdown nav inNavbar>
@@ -64,41 +68,44 @@ class App extends Component {
                     <DropdownMenu >
                       <DropdownItem>
                         <NavItem>
-                          <Link to="/about" style={myStyle} >About</Link>
+                          <Link to="/about" style={linkStyling} >About</Link>
                         </NavItem>
                       </DropdownItem>
                       <DropdownItem>
                         <NavItem>
-                          <Link to="/employers" style={myStyle} >Employers</Link>
+                          <Link to="/employers" style={linkStyling} >Employers</Link>
                         </NavItem>
                       </DropdownItem>
                       <DropdownItem>
                         <NavItem>
-                          <Link to="/candidates" style={myStyle} >Candidates</Link>
+                          <Link to="/candidates" style={linkStyling} >Candidates</Link>
                         </NavItem>
                       </DropdownItem>
                       <DropdownItem>
                         <NavItem>
-                          <Link to="/sales" style={myStyle} >Services</Link>
+                          <Link to="/sales" style={linkStyling} >Services</Link>
                         </NavItem>
                       </DropdownItem>
                       <DropdownItem>
                         <NavItem>
-                          <Link to="/retainedsearch" style={myStyle} >Retained Search</Link>
+                          <Link to="/retainedsearch" style={linkStyling} >Retained Search</Link>
                         </NavItem>
                       </DropdownItem>
                       <DropdownItem>
                         <NavItem>
-                          <Link to="/projectmanagement&staffingsolutions" style={myStyle} >Project Management and Staffing</Link>
+                          <Link to="/projectmanagement&staffingsolutions" style={linkStyling} >Project Management and Staffing</Link>
                         </NavItem>
                       </DropdownItem>
                       <DropdownItem>
                         <NavItem>
-                          <Link to="/contact" style={myStyle} >Contact</Link>
+                          <Link to="/contact" style={linkStyling} >Contact</Link>
                         </NavItem>
                       </DropdownItem>
                     </DropdownMenu>
                   </UncontrolledDropdown>
+
+                  {/* Divisions Dropdown*/}
+
                   <UncontrolledDropdown nav inNavbar>
                       <DropdownToggle nav caret>
                         Divisions

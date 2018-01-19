@@ -6,7 +6,9 @@ class Talent extends React.Component {
     super();
     this.state = { show: false };
   }
-{/* Animation timer for text*/}
+
+/* Animation timer for text*/
+
   componentDidMount() {
     setTimeout(() => {
       this.setState({ show: true });
