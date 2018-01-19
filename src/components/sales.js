@@ -8,11 +8,14 @@ class Sales extends React.Component {
     this.state = { show: false };
   }
 
+/* Animation timer for text*/
+
   componentDidMount() {
     setTimeout(() => {
       this.setState({ show: true });
     }, 100);
   }
+
   render() {
     return (
       <div className="page">
@@ -56,7 +59,7 @@ class Sales extends React.Component {
             <li>SWOT Analysis</li>
           </ul>
           <p>
-            acquisition of Staffing Companies
+            Acquisition of Staffing Companies
           </p>
         </div>
       </div>

@@ -17,11 +17,15 @@ class AnimatedRoutes extends Component {
     location: this.props.location,
   };
 
+/* What the component is doing when it comes in */
+
   handleEnter = () => {
     setTimeout(() => {
       Animated.spring(this.state.animate, { toValue: 1 }).start();
     }, 300);
   };
+
+/* What the component is doing when it leaves */
 
   handleExit = () => {
     Animated.spring(this.state.animate, { toValue: 0 }).start();

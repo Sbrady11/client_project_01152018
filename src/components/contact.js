@@ -9,6 +9,8 @@ class Contact extends React.Component {
     this.state = { show: false };
   }
 
+/* Animation timer for text*/
+
   componentDidMount() {
     setTimeout(() => {
       this.setState({ show: true });
@@ -20,15 +22,6 @@ class Contact extends React.Component {
       color: 'white'
     }
 
-    const imgStyle = {
-      height: 120,
-      width: 120,
-      float: 'right',
-      clear: 'left',
-      position: 'relative',
-      bottom: 150,
-      right: 160
-    }
     return (
       <div className="page">
         <h1>
@@ -44,7 +37,9 @@ class Contact extends React.Component {
           <p>212-497-9533</p>
           <p> Email: <a href={'mailto:$(this.props.email}'} style={letterSpacing}>bernie@atpoptions.com</a></p>
           <p> 622 3rd Avenue 7th floor, NY . NY 10017</p>
-          <img className ="buildingPic" src={Building} style={imgStyle} alt="building" />
+          <h1>
+            <img className ="topIcon" src={Building} alt="building" />
+          </h1>
         </div>
       </div>
       )

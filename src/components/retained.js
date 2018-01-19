@@ -3,31 +3,21 @@ import ReactRevealText from 'react-reveal-text';
 import Briefcase from '../images/037-briefcase.png';
 import GrowthImg from '../images/svg/037-growth.svg';
 
-
 class Retained extends React.Component {
   constructor() {
     super();
     this.state = { show: false };
   }
 
+/* Animation timer for text*/
+
   componentDidMount() {
   setTimeout(() => {
     this.setState({ show: true });
   }, 100);
-  }
+}
 
   render() {
-
-    const imgStyle = {
-    height: 200,
-    width: 200,
-    float: 'right',
-    clear: 'left',
-    position: 'relative',
-    bottom: 300,
-    right: 160
-    }
-
     return (
       <div className="page">
         <h1> 
@@ -51,8 +41,10 @@ class Retained extends React.Component {
               <li>Top Security Clearance</li>
               <li>Government</li>
             </ul>
-         </div>
-         <img className ="buildingPic" src={GrowthImg} style={imgStyle} alt="GrowthImg" />
+            <h1>
+              <img className ="topIcon" src={GrowthImg} alt="GrowthImg" />
+            </h1>
+          </div>
         </div>
       </div>
       )

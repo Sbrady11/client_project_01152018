@@ -4,11 +4,12 @@ import Coding from '../images/037-coding.png';
 import Medal from '../images/037-medal.png';
 
 class Project extends React.Component {
-
   constructor() {
     super();
     this.state = { show: false };
   }
+
+/* Animation timer for text*/
 
   componentDidMount() {
     setTimeout(() => {

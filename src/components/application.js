@@ -7,6 +7,8 @@ class Application extends React.Component {
     this.state = { show: false };
   }
 
+/* Animation timer for text*/
+
   componentDidMount() {
     setTimeout(() => {
       this.setState({ show: true });

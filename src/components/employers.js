@@ -7,6 +7,8 @@ class Employers extends React.Component {
     super();
     this.state = { show: false };
   }
+  
+/* Animation timer for text*/
 
   componentDidMount() {
     setTimeout(() => {
