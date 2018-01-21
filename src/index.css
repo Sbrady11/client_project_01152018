@@ -11,7 +11,7 @@ body,
 #root {
     height: 100%;
     width: 100%;
-    font-family: Roboto, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
 }
@@ -51,11 +51,11 @@ a {
 
 .page {
     padding: 0 24px;
+    width:100vw;
 }
 
 .pageText {
     max-width: 100%;
-    padding: 10px;
     border: 25px solid grey;
     background: grey;
     color: white;
@@ -150,42 +150,6 @@ h2 {
 .title span {
     display: inline-block;
     max-height: 300px
-}
-
-.title span:nth-child(1) {
-    animation: fall 1s forwards ease-out alternate;
-}
-
-.title span:nth-child(2) {
-    animation: fall2 1.5s forwards ease-out alternate;
-}
-
-.title span:nth-child(3) {
-    animation: fall3 2s forwards ease-out alternate;
-}
-
-@keyframes space {
-    to {
-        letter-spacing: -0.17em;
-    }
-}
-
-@keyframes fall {
-    0% {
-        transform: translateY(-50em);
-    }
-}
-
-@keyframes fall2 {
-    0% {
-        transform: translateX(-50em);
-    }
-}
-
-@keyframes fall3 {
-    0% {
-        transform: translateX(50em);
-    }
 }
 
 .mainWrapprt {
