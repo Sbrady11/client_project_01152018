@@ -12,8 +12,8 @@ body,
     height: 100%;
     width: 100%;
     font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+    font-size: 100%;
+    background-color: #BFC0C0
 }
 
 h1 {
@@ -32,6 +32,7 @@ body {
     position: relative;
     display: flex;
     flex-flow: column;
+    background: #005662
 }
 
 a {
@@ -52,7 +53,7 @@ a {
 
 .page {
     padding: 0 24px;
-    width:100vw;
+    width: 100vw;
 }
 
 .pageText {
@@ -140,17 +141,18 @@ h2 {
 .title {
     margin-right: 0.15em;
     font-weight: bold;
-    font-size: 15em;
+    font-size: 13em;
     color: White;
     text-shadow: 0 0 0.1em black;
     letter-spacing: 0em;
     text-align: center;
-    max-height: 300px
+    max-height: 300px;
+    overflow: none
 }
 
 .title span {
     display: inline-block;
-    max-height: 300px
+    max-height: 2.5em
 }
 
 .mainWrapprt {
@@ -173,3 +175,24 @@ h2 {
     width: 25px;
     height: 25px;
 }
+
+.middleNav {
+    margin: auto;
+    padding: 5px;
+    text-align: center;
+    background-color: #BFC0C0
+}
+
+.subtitle {
+    color: white
+}
+
+.componentHeader {
+    font-size: 40px;
+    letter-spacing: 10px;
+    margin: auto;
+    font-weight: bold;
+    text-align: center;
+}
+
+.navElement {}

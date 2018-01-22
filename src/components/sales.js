@@ -19,12 +19,12 @@ class Sales extends React.Component {
   render() {
     return (
       <div className="page">
-          <h1>
+          <div className='componentHeader'>
             <img className="topIcon" src={Creativity} alt='img'/>
             <ReactRevealText show={this.state.show}>
               The ATP Options Difference
             </ReactRevealText>
-          </h1>
+          </div>
         <div className="pageText">
           <h2> Collaboration, Not Automation </h2>
           <p>

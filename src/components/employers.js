@@ -17,15 +17,9 @@ class Employers extends React.Component {
   }
   render() {
     
-    const headerStyling ={
-      fontSize: 40,
-      letterSpacing: 10,
-      color: 'black'
-    }
-
     return (
       <div className="page">
-        <div className='title' style={headerStyling}>
+        <div className='componentHeader'>
           <img className="topIcon" src={Presentation} alt='img'/>
           <ReactRevealText show={this.state.show}>
             Employers

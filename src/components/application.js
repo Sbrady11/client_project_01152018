@@ -17,11 +17,11 @@ class Application extends React.Component {
   render() {
     return (
       <div className="page">
-        <h1> 
+        <div className='componentHeader'> 
         <ReactRevealText show={this.state.show}>
           Application 
         </ReactRevealText>
-        </h1>
+        </div>
       </div>
       )
     }

@@ -56,7 +56,7 @@ class App extends Component {
 
             {/* Bootstrapped Nav */}
 
-            <Navbar color="faded" light expand="md">
+            <Navbar color="light" position='fixed' light expand="md">
               <NavbarBrand href="/"><img className ="subLogo" src={Logo} alt="Logo" />ATP Options</NavbarBrand>
               <NavbarToggler onClick={this.toggle} />
               <Collapse isOpen={this.state.isOpen} navbar>
