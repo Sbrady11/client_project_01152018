@@ -18,7 +18,8 @@ body,
 
 h1 {
     text-align: center;
-    letter-spacing: .3em
+    letter-spacing: .3em;
+    font-weight: 800;
 }
 
 body {

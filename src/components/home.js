@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from '../images/FixedATPLogo.png';
 import ReactRevealText from 'react-reveal-text';
-import { NavLink } from 'reactstrap';
+import { Nav, NavLink } from 'reactstrap';
 
 class Home extends React.Component {
   constructor() {
@@ -14,7 +14,7 @@ class Home extends React.Component {
   componentDidMount() {
     setTimeout(() => {
       this.setState({ show: true });
-    }, 300);
+    }, 200);
   }
 
 
@@ -22,6 +22,7 @@ class Home extends React.Component {
     const linkStyling = {
     padding: 50
     }
+
     return (
       <div className="mainWrapper">
         <div className="page">
@@ -38,6 +39,11 @@ class Home extends React.Component {
             <NavLink href="/about" style = {linkStyling} >Enter</NavLink>
           </h1>
         </div>
+        <Nav horizontal>
+          <NavLink href='/about' style = {linkStyling}> Who We Are </NavLink>
+          <NavLink href='/candidates' style = {linkStyling}> Candidates </NavLink>
+          <NavLink href='/sales' style = {linkStyling}> Services </NavLink>
+        </Nav>
       </div>
       )
     }

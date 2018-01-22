@@ -16,14 +16,21 @@ class Employers extends React.Component {
     }, 100);
   }
   render() {
+    
+    const headerStyling ={
+      fontSize: 40,
+      letterSpacing: 10,
+      color: 'black'
+    }
+
     return (
       <div className="page">
-        <h1>
+        <div className='title' style={headerStyling}>
           <img className="topIcon" src={Presentation} alt='img'/>
           <ReactRevealText show={this.state.show}>
             Employers
           </ReactRevealText>
-        </h1>
+        </div>
         <div className="pageText">
           <p>
             Today, candidates are going to be at an advantage over employers for the first time in hiring history; as recent laws have been passed by the government that affects the hiring and decision making compensation practices.
