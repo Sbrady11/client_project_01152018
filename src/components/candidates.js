@@ -19,12 +19,12 @@ class Candidates extends React.Component {
   render() {
     return (
       <div className="page">
-          <h1>
+          <div className='componentHeader'>
             <img className="topIcon" src={Avatar} alt='img'/>
             <ReactRevealText show={this.state.show}>
               Candidates
             </ReactRevealText>
-          </h1>
+          </div>
         <div className="pageText">
           <div className="clockText">
             <ReactRevealText show={this.state.show}>

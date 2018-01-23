@@ -17,11 +17,11 @@ class Customized extends React.Component {
   render() {
     return (
       <div className="page">
-        <h1> 
+        <div className='componentHeader'> 
           <ReactRevealText show={this.state.show}>
             Customized 
           </ReactRevealText>    
-        </h1>
+        </div>
         <div className="pageText">
         <p>
             Customized Staffing Solutions Exclusively:

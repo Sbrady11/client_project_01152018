@@ -18,12 +18,12 @@ class AboutUs extends React.Component {
   render() {
     return (
       <div className="page">
-        <h1>
+        <div className='componentHeader'>
           <img className="topIcon" src={Handshake} alt='img'/>
           <ReactRevealText show={this.state.show}>
               About Us
           </ReactRevealText>
-        </h1>
+        </div>
         <div className="pageText">
           <h3>ATP Options</h3>
           <p> - A full-service national staffing firm based in New York City with offices in Texas, Chicago, Florida, California etc. Our broad-based staffing solutions range from project staffing services (hiring a team or a division full time or consultants) to long-term on-site recruiting, temporary hiring on exclusive or contingency basis and full-time traditional recruitment. We use cloud-based resources and AI technology to create personal and effective advantages in the market.

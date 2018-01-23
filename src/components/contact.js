@@ -19,17 +19,16 @@ class Contact extends React.Component {
   render() {
     const letterSpacing = {
       letterSpacing: 0,
-      color: 'white'
     }
 
     return (
       <div className="page">
-        <h1>
-        <img className="topIcon" src={Placeholder} alt='img'/>
+        <div className='componentHeader'>
+          <img className="topIcon" src={Placeholder} alt='img'/>
           <ReactRevealText show={this.state.show}>
             Contact
           </ReactRevealText>
-        </h1>
+        </div>
         <div className="pageText">
           <h3>
             <p> Managing Director: Bernie Vogel</p>

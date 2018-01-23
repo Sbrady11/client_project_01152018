@@ -20,13 +20,12 @@ class Retained extends React.Component {
   render() {
     return (
       <div className="page">
-        <h1> 
-        <img className="topIcon" src={Briefcase} alt='img'/>
-        <ReactRevealText show={this.state.show}>
-          Retained Search 
-        </ReactRevealText>
-        </h1>
-        <div className="page">
+        <div className='componentHeader'> 
+          <img className="topIcon" src={Briefcase} alt='img'/>
+          <ReactRevealText show={this.state.show}>
+            Retained Search 
+          </ReactRevealText>
+        </div>
           <div className="pageText">
             <ul>
               <li>Healthcare</li>
@@ -45,7 +44,6 @@ class Retained extends React.Component {
               <img className ="topIcon" src={GrowthImg} alt="GrowthImg" />
             </h1>
           </div>
-        </div>
       </div>
       )
     }

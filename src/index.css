@@ -11,14 +11,15 @@ body,
 #root {
     height: 100%;
     width: 100%;
-    font-family: Roboto, sans-serif;
-    font-size: 16px;
-    background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 100%;
+    background-color: #BFC0C0
 }
 
 h1 {
     text-align: center;
-    letter-spacing: .3em
+    letter-spacing: .3em;
+    font-weight: 800;
 }
 
 body {
@@ -31,6 +32,7 @@ body {
     position: relative;
     display: flex;
     flex-flow: column;
+    background: #005662
 }
 
 a {
@@ -51,14 +53,15 @@ a {
 
 .page {
     padding: 0 24px;
+    width: 100vw;
 }
 
 .pageText {
     max-width: 100%;
-    padding: 10px;
-    border: 25px solid grey;
-    background: grey;
-    color: white;
+    border: 25px;
+    color: black;
+    background: white;
+    padding: 3rem;
 }
 
 canvas {
@@ -120,16 +123,16 @@ h2 {
     text-align: center;
 }
 
-@media (max-width: 375px) {
+.topIcon {
+    max-height: 10%;
+    max-width: 10%
+}
+
+@media screen and (max-width: 375px) {
     .topIcon {
         max-height: 30%;
         max-width: 30%
     }
-}
-
-.topIcon {
-    max-height: 10%;
-    max-width: 10%
 }
 
 .dropdown-toggle nav-link {
@@ -139,72 +142,75 @@ h2 {
 .title {
     margin-right: 0.15em;
     font-weight: bold;
-    font-size: 15em;
+    font-size: 13em;
     color: White;
     text-shadow: 0 0 0.1em black;
     letter-spacing: 0em;
     text-align: center;
-    max-height: 300px
+    max-height: 300px;
 }
 
 .title span {
     display: inline-block;
-    max-height: 300px
+    max-height: 2.5em
 }
 
-.title span:nth-child(1) {
-    animation: fall 1s forwards ease-out alternate;
-}
-
-.title span:nth-child(2) {
-    animation: fall2 1.5s forwards ease-out alternate;
-}
-
-.title span:nth-child(3) {
-    animation: fall3 2s forwards ease-out alternate;
-}
-
-@keyframes space {
-    to {
-        letter-spacing: -0.17em;
+@media screen and (max-width:661px) {
+    .title {
+        font-size: 10em;
+        color: White;
+        text-shadow: 0 0 0.1em black;
+        font-weight: bold;
     }
-}
-
-@keyframes fall {
-    0% {
-        transform: translateY(-50em);
-    }
-}
-
-@keyframes fall2 {
-    0% {
-        transform: translateX(-50em);
-    }
-}
-
-@keyframes fall3 {
-    0% {
-        transform: translateX(50em);
-    }
-}
-
-.mainWrapprt {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 45em;
-    height: 35em;
-    margin: auto;
-    text-align: center;
-    color: #fff;
-    font-family: "arial";
-    letter-spacing: 0.4em;
-    overflow: hidden;
 }
 
 .subLogo {
     width: 25px;
     height: 25px;
+}
+
+.componentHeader {
+    font-size: 40px;
+    letter-spacing: 10px;
+    margin: auto;
+    font-weight: bold;
+    text-align: center;
+}
+
+.middleNav {
+    position: relative;
+    top: 25px;
+    margin: 40px;
+    background-color: white;
+    margin: auto;
+    text-align: center;
+    display: block
+}
+
+.subtitle {
+    color: white
+}
+
+.navElement {
+    display: block;
+    position: relative;
+    padding: 20;
+    clear: right;
+}
+
+.navIcon {
+    max-height: 10%;
+    max-width: 10%
+}
+
+.signature {
+    bottom: 0;
+    margin: auto;
+    float: left;
+    font-size: .25em;
+    background: #BFC0C0;
+    display: block;
+    width: 100%;
+    ;
+    line-height: .001em
 }

@@ -19,12 +19,12 @@ class Project extends React.Component {
   render() {
     return (
       <div className="page">
-        <h1> 
+        <div className='componentHeader'> 
           <img className="topIcon" src={Coding} alt='img'/>
           <ReactRevealText show={this.state.show}>
             Project Management and Staffing 
           </ReactRevealText>
-        </h1>
+        </div>
         <div className="pageText">
           <h2>In todays business world, leaders are more necessary than ever.</h2>
           <p>As projects increase in scale and scope, it becomes imperative to organize behind a unified design. ATP Options is able to provide your company with the experienced and capable project managers you need.</p>
