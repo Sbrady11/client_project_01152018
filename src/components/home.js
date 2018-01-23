@@ -61,7 +61,7 @@ class Home extends React.Component {
               <Card>
                 <CardBody>
                 A full-service national staffing firm based in New York City,
-                We are taking our combined years of multiple industry experiences to have clients and associates benefit from working in a diverse and mature working relationship.
+                we are taking our combined years of multiple industry experiences to have clients and associates benefit from working in a diverse and mature working relationship.
                 <NavLink href='/about'> more </NavLink>
                 </CardBody>
               </Card>

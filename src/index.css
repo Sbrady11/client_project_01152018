@@ -155,12 +155,15 @@ h2 {
     max-height: 2.5em
 }
 
-@media screen and (max-width:661px) {
+@media only screen and (min-width:300px) and (max-width:661px) {
     .title {
-        font-size: 10em;
+        font-size: 5em;
         color: White;
         text-shadow: 0 0 0.1em black;
         font-weight: bold;
+    }
+    h1 {
+        font-size: .5em;
     }
 }
 
@@ -200,7 +203,13 @@ h2 {
 
 .navIcon {
     max-height: 10%;
-    max-width: 10%
+    max-width: 10%;
+    margin: 15px;
+    transition: margin 0.5s ease-out;
+}
+
+.navIcon:hover {
+    margin-top: 2px
 }
 
 .signature {
@@ -213,4 +222,21 @@ h2 {
     width: 100%;
     ;
     line-height: .001em
+}
+
+.division {
+    max-height: 40px;
+    max-width: 100px;
+    padding: 5px
+}
+
+.container {
+    padding: 40px;
+    position: relative;
+}
+
+.profilePicture img {
+    float: right;
+    clear: left;
+    border-radius: 50%
 }
