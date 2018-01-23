@@ -19,7 +19,6 @@ class Contact extends React.Component {
   render() {
     const letterSpacing = {
       letterSpacing: 0,
-      color: 'white'
     }
 
     return (

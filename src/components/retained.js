@@ -26,7 +26,6 @@ class Retained extends React.Component {
             Retained Search 
           </ReactRevealText>
         </div>
-        <div className="page">
           <div className="pageText">
             <ul>
               <li>Healthcare</li>
@@ -45,7 +44,6 @@ class Retained extends React.Component {
               <img className ="topIcon" src={GrowthImg} alt="GrowthImg" />
             </h1>
           </div>
-        </div>
       </div>
       )
     }

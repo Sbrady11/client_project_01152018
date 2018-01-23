@@ -58,9 +58,10 @@ a {
 
 .pageText {
     max-width: 100%;
-    border: 25px solid grey;
-    background: grey;
-    color: white;
+    border: 25px;
+    color: black;
+    background: white;
+    padding: 3rem;
 }
 
 canvas {
@@ -122,16 +123,16 @@ h2 {
     text-align: center;
 }
 
-@media (max-width: 375px) {
+.topIcon {
+    max-height: 10%;
+    max-width: 10%
+}
+
+@media screen and (max-width: 375px) {
     .topIcon {
         max-height: 30%;
         max-width: 30%
     }
-}
-
-.topIcon {
-    max-height: 10%;
-    max-width: 10%
 }
 
 .dropdown-toggle nav-link {
@@ -147,7 +148,6 @@ h2 {
     letter-spacing: 0em;
     text-align: center;
     max-height: 300px;
-    overflow: none
 }
 
 .title span {
@@ -155,36 +155,18 @@ h2 {
     max-height: 2.5em
 }
 
-.mainWrapprt {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 45em;
-    height: 35em;
-    margin: auto;
-    text-align: center;
-    color: #fff;
-    font-family: "arial";
-    letter-spacing: 0.4em;
-    overflow: hidden;
+@media screen and (max-width:661px) {
+    .title {
+        font-size: 10em;
+        color: White;
+        text-shadow: 0 0 0.1em black;
+        font-weight: bold;
+    }
 }
 
 .subLogo {
     width: 25px;
     height: 25px;
-}
-
-.middleNav {
-    margin: auto;
-    padding: 5px;
-    text-align: center;
-    background-color: #BFC0C0
-}
-
-.subtitle {
-    color: white
 }
 
 .componentHeader {
@@ -195,4 +177,40 @@ h2 {
     text-align: center;
 }
 
-.navElement {}
+.middleNav {
+    position: relative;
+    top: 25px;
+    margin: 40px;
+    background-color: white;
+    margin: auto;
+    text-align: center;
+    display: block
+}
+
+.subtitle {
+    color: white
+}
+
+.navElement {
+    display: block;
+    position: relative;
+    padding: 20;
+    clear: right;
+}
+
+.navIcon {
+    max-height: 10%;
+    max-width: 10%
+}
+
+.signature {
+    bottom: 0;
+    margin: auto;
+    float: left;
+    font-size: .25em;
+    background: #BFC0C0;
+    display: block;
+    width: 100%;
+    ;
+    line-height: .001em
+}
