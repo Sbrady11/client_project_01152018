@@ -169,6 +169,12 @@ canvas {
     }
 }
 
+@media only screen and (min-width: 1500px) {
+    .middleNav {
+        top: 50px;
+    }
+}
+
 .subLogo {
     width: 25px;
     height: 25px;
