@@ -28,6 +28,9 @@ class Home extends React.Component {
     }, 200);
   }
   render() {
+    const letterSpacing = {
+      letterSpacing: 0,
+    }
     return (
       <div className='mainWrapper'>
         <div className='page'>
@@ -54,7 +57,7 @@ class Home extends React.Component {
               <CardImg top width='100%' src={Avatar} />
                 <CardBody>
                   We are interested in finding the perfect fit for our clients, and that all starts with you.
-                <NavLink href='/candidates'> more </NavLink>
+                    <NavLink href='/candidates'> more </NavLink>
               </CardBody>
             </Card>
             <Card body className='text-center'>
@@ -80,7 +83,7 @@ class Home extends React.Component {
         </Container>
         </div>
         <div className='signature'>
-          <p>Copyright ATPOptions.info 2018. All Rights Reserved. Website by Simon Brady</p>
+          <p>Copyright ATPOptions.info 2018. All Rights Reserved. Website by <NavLink href='https://www.linkedin.com/in/simon-brady11/' style={letterSpacing}>Simon Brady</NavLink></p>
         </div>
 
       </div>

@@ -139,7 +139,7 @@ class App extends Component {
             </AnimatedRoutes> 
           </div>
         </Router>
-      </div>  
+      </div> 
     );
   }
 }
