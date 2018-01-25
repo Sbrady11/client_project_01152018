@@ -235,12 +235,11 @@ canvas {
 
 .signature {
     float: left;
-    font-size: .25em;
+    font-size: .5em;
     background: #BFC0C0;
     display: block;
     width: 100%;
     z-index: 100;
-    color: white;
     position: relative;
 }
 
