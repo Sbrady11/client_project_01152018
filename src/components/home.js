@@ -1,10 +1,9 @@
 import React from 'react';
+import { Container, CardDeck, CardImg, CardTitle, CardSubtitle, CardBody, Card } from 'reactstrap';
 import { NavLink } from 'reactstrap';
-import { Collapse, Button, CardBody, Card } from 'reactstrap';
 import ReactRevealText from 'react-reveal-text';
 import logo from '../images/ATPLogoClean.png';
 import Handshake from '../images/037-handshake.png';
-import Placeholder from '../images/037-placeholder.png';
 import Creativity from '../images/037-creativity.png';
 import Avatar from '../images/037-avatar.png';
 
@@ -29,12 +28,6 @@ class Home extends React.Component {
     }, 200);
   }
   render() {
-    const linkStyling = {
-    padding: 15,
-    textDecoration: 'none',
-    color: 'black',
-    fontSize: 18
-    }
     return (
       <div className='mainWrapper'>
         <div className='page'>
@@ -53,56 +46,38 @@ class Home extends React.Component {
           </div>
         </div>
         <div className='middleNav'>
-        <Button color="secondary" onClick={this.toggle} style={{ margin: '1rem' }}>Click to Begin</Button>
-          <div className='navElement'>
-            <Collapse isOpen={this.state.collapse}>
-            <NavLink href='/about' style = {linkStyling}> Who We Are </NavLink>
-              <img className='navIcon' src={Handshake} alt='img'/>
-              <Card>
-                <CardBody>
-                A full-service national staffing firm based in New York City,
-                we are taking our combined years of multiple industry experiences to have clients and associates benefit from working in a diverse and mature working relationship.
-                <NavLink href='/about'> more </NavLink>
-                </CardBody>
-              </Card>
-            </Collapse>
-          </div>
-          <div className='navElement'>
-            <Collapse isOpen={this.state.collapse}>
-            <NavLink href='/candidates' style = {linkStyling}> Candidates </NavLink>
-              <img className='navIcon' src={Avatar} alt='img'/>
-              <Card>
+        <Container>         
+          <CardDeck>
+            <Card body className='text-center'>
+              <CardTitle tag="h3">Candidates</CardTitle>
+              <CardSubtitle></CardSubtitle>
+              <CardImg top width='100%' src={Avatar} />
                 <CardBody>
                   We are interested in finding the perfect fit for our clients, and that all starts with you.
                 <NavLink href='/candidates'> more </NavLink>
-                </CardBody>
-              </Card>
-            </Collapse>
-          </div>
-          <div className='navElement'>
-            <Collapse isOpen={this.state.collapse}>
-            <NavLink href='/sales' style = {linkStyling}> Services </NavLink>
-              <img className='navIcon' src={Creativity} alt='img'/>
-              <Card>
+              </CardBody>
+            </Card>
+            <Card body className='text-center'>
+              <CardTitle tag="h3">About Us</CardTitle>
+                <CardSubtitle></CardSubtitle>
+              <CardImg top width='100%' src={Handshake} />
                 <CardBody>
-                  At ATP we provide customized staffing solutions, talent acquisition solutions-project management, applicant tracking systems, and more.
-                <NavLink href='/sales'> more </NavLink>
+                  A full-service national staffing firm based in New York City,
+                  we are taking our combined years of multiple industry experiences to have clients and associates benefit from working in a diverse and mature working relationship.
+                  <NavLink href='/about'> more </NavLink>
                 </CardBody>
-              </Card>
-            </Collapse>
-          </div>
-          <div className='navElement'>
-            <Collapse isOpen={this.state.collapse}>
-              <NavLink href='/contact' style = {linkStyling}> Contact </NavLink>
-              <img className='navIcon' src={Placeholder} alt='img'/>
-              <Card>
-                <CardBody>
-                  Lets work together.
-                <NavLink href='/contact'> more </NavLink>
+            </Card>
+            <Card body className='text-center'>
+              <CardTitle tag="h3">Clients</CardTitle>
+                <CardSubtitle></CardSubtitle>
+              <CardImg top width='100%' src={Creativity} />
+                  <CardBody>
+                    At ATP we provide customized staffing solutions, talent acquisition solutions-project management, applicant tracking systems, and more.
+                  <NavLink href='/sales'> more </NavLink>
                 </CardBody>
-              </Card>
-            </Collapse>
-          </div>
+            </Card>    
+          </CardDeck>
+        </Container>
         </div>
         <div className='signature'>
           <p>Copyright ATPOptions.info 2018. All Rights Reserved. Website by Simon Brady</p>

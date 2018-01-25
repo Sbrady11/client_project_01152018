@@ -57,7 +57,7 @@ class Contact extends React.Component {
             <p> Managing Director: Bernie Vogel</p>
           </h3>
           <p>212-497-9533</p>
-          <p> Email: <a href={'mailto:$(this.props.email}'} style={letterSpacing}>bernie@atpoptions.com</a></p>
+          <p> Email: <a href={'mailto:bernie@atpoptions.com'} style={letterSpacing}>bernie@atpoptions.com</a></p>
           <p> 622 3rd Avenue 7th floor, </p>
           <p> New York, NY 10017</p>
           <Container>
