@@ -60,31 +60,33 @@ class Contact extends React.Component {
           <p> Email: <a href={'mailto:bernie@atpoptions.com'} style={letterSpacing}>bernie@atpoptions.com</a></p>
           <p> 622 3rd Avenue 7th floor, </p>
           <p> New York, NY 10017</p>
-          <Container>
-            <Row>
-              <Col><img className='division' src={AldanTroy} alt='division logo' /></Col>
-              <Col><img className='division' src={Diversity} alt='division logo' /></Col>
-              <Col><img className='division' src={GHG} alt='division logo' /></Col>
-              <Col><img className='division' src={GHGHealth} alt='division logo' /></Col>
-              <Col><img className='division' src={JDTuttle} alt='division logo' /></Col>
-              <Col><img className='division' src={NoorStaffing} alt='division logo' /></Col>
-            </Row>
-            <Row>
-              <Col><img className='division' src={large} alt='division logo' /></Col>
-              <Col><img className='division' src={Lerner} alt='division logo' /></Col>
-              <Col><img className='division' src={Noor} alt='division logo' /></Col>
-              <Col><img className='division' src={noorAssociates} alt='division logo' /></Col>
-              <Col><img className='division' src={noorHospitality} alt='division logo' /></Col>
-              <Col><img className='division' src={theLegalGroup} alt='division logo' /></Col>
-            </Row>
-            <Row>
-              <Col><img className='division' src={SearchPoint} alt='division logo' /></Col>
-              <Col><img className='division' src={small_menu} alt='division logo' /></Col>
-              <Col><img className='division' src={StratResources} alt='division logo' /></Col>
-              <Col><img className='division' src={temporaryAlt} alt='division logo' /></Col>
-              <Col><img className='division' src={temprService} alt='division logo' /></Col>
-              <Col><img className='division' src={Triangle} alt='division logo' /></Col>
-            </Row>
+          <Container> 
+            <NavLink href='https://noorinc.com/'>
+              <Row>
+                <Col><img className='division' src={AldanTroy} alt='division logo' /></Col>
+                <Col><img className='division' src={Diversity} alt='division logo' /></Col>
+                <Col><img className='division' src={GHG} alt='division logo' /></Col>
+                <Col><img className='division' src={GHGHealth} alt='division logo' /></Col>
+                <Col><img className='division' src={JDTuttle} alt='division logo' /></Col>
+                <Col><img className='division' src={NoorStaffing} alt='division logo' /></Col>
+              </Row>
+              <Row>
+                <Col><img className='division' src={large} alt='division logo' /></Col>
+                <Col><img className='division' src={Lerner} alt='division logo' /></Col>
+                <Col><img className='division' src={Noor} alt='division logo' /></Col>
+                <Col><img className='division' src={noorAssociates} alt='division logo' /></Col>
+                <Col><img className='division' src={noorHospitality} alt='division logo' /></Col>
+                <Col><img className='division' src={theLegalGroup} alt='division logo' /></Col>
+              </Row>
+              <Row>
+                <Col><img className='division' src={SearchPoint} alt='division logo' /></Col>
+                <Col><img className='division' src={small_menu} alt='division logo' /></Col>
+                <Col><img className='division' src={StratResources} alt='division logo' /></Col>
+                <Col><img className='division' src={temporaryAlt} alt='division logo' /></Col>
+                <Col><img className='division' src={temprService} alt='division logo' /></Col>
+                <Col><img className='division' src={Triangle} alt='division logo' /></Col>
+              </Row>
+            </NavLink>
           </Container>
         </div>
       </div>
