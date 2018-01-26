@@ -126,8 +126,8 @@ canvas {
 }
 
 .topIcon {
-    max-height: 25%;
-    max-width: 25%
+    max-height: 15%;
+    max-width: 15%;
 }
 
 .dropdown-toggle nav-link {
@@ -181,6 +181,13 @@ canvas {
     }
 }
 
+@media only screen and (min-width: 1900px) {
+    .middleNav {
+        position: relative;
+        top: 800px;
+    }
+}
+
 .subLogo {
     width: 25px;
     height: 25px;
@@ -230,7 +237,13 @@ canvas {
 }
 
 .card:hover {
-    margin-top: 2px
+    margin-top: 4px;
+}
+
+.card img {
+    max-width: 50%;
+    max-height: 50%;
+    margin: auto;
 }
 
 .signature {
