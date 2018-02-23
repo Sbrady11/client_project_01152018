@@ -1,6 +1,5 @@
 import React from 'react';
-import { Container, CardDeck, CardImg, CardTitle, CardSubtitle, CardBody, Card } from 'reactstrap';
-import { NavLink } from 'reactstrap';
+import { Container, CardDeck, CardImg, CardTitle, CardSubtitle, CardBody, Card, NavLink } from 'reactstrap';
 import ReactRevealText from 'react-reveal-text';
 import logo from '../images/ATPLogoClean.png';
 import Handshake from '../images/037-handshake.png';
@@ -57,7 +56,6 @@ class Home extends React.Component {
               <CardImg top width='100%' src={Avatar} />
                 <CardBody>
                   We are interested in finding the perfect fit for our clients, and that all starts with you.
-                    <NavLink href='/candidates'> more </NavLink>
               </CardBody>
             </Card>
             <Card body className='text-center'>
@@ -67,7 +65,6 @@ class Home extends React.Component {
                 <CardBody>
                   A full-service national staffing firm based in New York City,
                   we are taking our combined years of multiple industry experiences to have clients and associates benefit from working in a diverse and mature working relationship.
-                  <NavLink href='/about'> more </NavLink>
                 </CardBody>
             </Card>
             <Card body className='text-center'>
@@ -76,7 +73,6 @@ class Home extends React.Component {
               <CardImg top width='100%' src={Creativity} />
                   <CardBody>
                     At ATP we provide customized staffing solutions, talent acquisition solutions-project management, applicant tracking systems, and more.
-                  <NavLink href='/sales'> more </NavLink>
                 </CardBody>
             </Card>    
           </CardDeck>

@@ -63,42 +63,22 @@ class App extends Component {
               <Collapse isOpen={this.state.isOpen} navbar>
                 <Nav className="ml-auto" navbar>
                   <NavItem>
-                    <NavLink href="/about">About Us</NavLink>
+                    <NavLink><Link to="/about" style={linkStyling} >About</Link></NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="/employers">Employers</NavLink>
+                    <NavLink><Link to="/employers" style={linkStyling} >Employers</Link></NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="/candidates">Candidates</NavLink>
+                    <NavLink><Link to="/candidates" style={linkStyling} >Candidates</Link></NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="/contact">Contact Us</NavLink>
+                    <NavLink><Link to="/contact" style={linkStyling}>Contact</Link></NavLink>
                   </NavItem>
                   <UncontrolledDropdown nav inNavbar>
                     <DropdownToggle nav caret>
                       More
                     </DropdownToggle>
-                    <DropdownMenu >
-                      <DropdownItem>
-                        <NavItem>
-                          <Link to="/" style={linkStyling} >Home</Link>
-                        </NavItem>
-                      </DropdownItem>
-                      <DropdownItem>
-                        <NavItem>
-                          <Link to="/about" style={linkStyling} >About</Link>
-                        </NavItem>
-                      </DropdownItem>
-                      <DropdownItem>
-                        <NavItem>
-                          <Link to="/employers" style={linkStyling} >Employers</Link>
-                        </NavItem>
-                      </DropdownItem>
-                      <DropdownItem>
-                        <NavItem>
-                          <Link to="/candidates" style={linkStyling} >Candidates</Link>
-                        </NavItem>
-                      </DropdownItem>
+                    <DropdownMenu right >
                       <DropdownItem>
                         <NavItem>
                           <Link to="/sales" style={linkStyling} >Services</Link>
@@ -112,11 +92,6 @@ class App extends Component {
                       <DropdownItem>
                         <NavItem>
                           <Link to="/projectmanagement&staffingsolutions" style={linkStyling} >Project Management and Staffing</Link>
-                        </NavItem>
-                      </DropdownItem>
-                      <DropdownItem>
-                        <NavItem>
-                          <Link to="/contact" style={linkStyling} >Contact</Link>
                         </NavItem>
                       </DropdownItem>
                     </DropdownMenu>
